@@ -233,7 +233,7 @@ export interface Big {
      * @param dp Decimal places, 0 to 1e+6 inclusive
      * @throws `!toFix!` if dp is invalid.
      */
-    toExponential(dp?: number): string;
+    toExponential(dp?: number, rm?: RoundingMode): string;
     /**
      * Returns a string representing the value of this Big number in normal notation to a fixed number of decimal places dp.
      *
@@ -250,7 +250,7 @@ export interface Big {
      * @param dp Decimal places, 0 to 1e+6 inclusive
      * @throws `!toFix!` if dp is invalid.
      */
-    toFixed(dp?: number): string;
+    toFixed(dp?: number, rm?: RoundingMode): string;
     /**
      * Returns a string representing the value of this Big number to the specified number of significant digits sd.
      *
@@ -265,7 +265,7 @@ export interface Big {
      * @param sd Significant digits, 1 to 1e+6 inclusive
      * @throws `!toPre!` if sd is invalid.
      */
-    toPrecision(sd?: number): string;
+    toPrecision(sd?: number, rm?: RoundingMode): string;
     /**
      * Returns a string representing the value of this Big number.
      *
